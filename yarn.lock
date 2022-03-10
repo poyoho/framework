@@ -3069,7 +3069,7 @@ __metadata:
     fs-extra: ^10.0.1
     globby: ^13.1.1
     gzip-size: ^7.0.0
-    h3: ^0.3.9
+    h3: ^0.4.0
     hasha: ^5.2.2
     hookable: ^5.1.1
     http-proxy: ^1.18.1
@@ -8069,7 +8069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie@npm:^0.4.1":
+"cookie@npm:^0.4.1, cookie@npm:^0.4.2":
   version: 0.4.2
   resolution: "cookie@npm:0.4.2"
   checksum: a00833c998bedf8e787b4c342defe5fa419abd96b32f4464f718b91022586b8f1bafbddd499288e75c037642493c83083da426c6a9080d309e3bd90fd11baa9b
@@ -11703,6 +11703,18 @@ __metadata:
   version: 0.3.9
   resolution: "h3@npm:0.3.9"
   checksum: da1bf2ffbcc424fb28e474287d64f7d3b506b3341c40f74667fb346bf789ac6bb945798c9d200c6012a07eb0dd91f47ac4bebfc31c1d64aff1c7b2b3a6448db8
+  languageName: node
+  linkType: hard
+
+"h3@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "h3@npm:0.4.0"
+  dependencies:
+    cookie: ^0.4.2
+    destr: ^1.1.0
+    radix3: ^0.1.1
+    ufo: ^0.7.11
+  checksum: 7dbb993bd69009d10ae039256b01697799665a517e1a426a83b03c2004d00d16682f5e1a9aa7fd72f5bc36d6f8e93501e89a3e2bce48858e07cf85703359ed25
   languageName: node
   linkType: hard
 
@@ -15482,7 +15494,7 @@ __metadata:
     escape-string-regexp: ^5.0.0
     fs-extra: ^10.0.1
     globby: ^13.1.1
-    h3: ^0.3.9
+    h3: ^0.4.0
     hash-sum: ^2.0.0
     hookable: ^5.1.1
     knitwork: ^0.1.1
@@ -18430,6 +18442,13 @@ __metadata:
   version: 4.0.1
   resolution: "quick-lru@npm:4.0.1"
   checksum: bea46e1abfaa07023e047d3cf1716a06172c4947886c053ede5c50321893711577cb6119360f810cc3ffcd70c4d7db4069c3cee876b358ceff8596e062bd1154
+  languageName: node
+  linkType: hard
+
+"radix3@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "radix3@npm:0.1.1"
+  checksum: 06ca57c4eea58b82a84a7d4763ce3a904a03f4ae9b59433787411e96bd53186c17a5beca356184ae61ff44aabb97315a5fe0cc09b1cf849f5dc957a4901fba77
   languageName: node
   linkType: hard
 
