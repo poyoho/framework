@@ -61,6 +61,30 @@ jobs:
       - name: Lint
         run: yarn lint
 
+  test-fixtures-build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [14]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn --immutable
+
+      - name: Stub
+        run: yarn stub
+
+      - name: Test (unit)
+        run: yarn test:fixtures-build
+
   test-fixtures:
     runs-on: ${{ matrix.os }}
 
