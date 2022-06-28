@@ -13,6 +13,8 @@
 </template>
 
 <script setup>
+// windows tests
+import { useFoo } from '@/composables/foo'
 const config = useRuntimeConfig()
 
 const foo = useFoo()
